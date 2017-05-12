@@ -1,20 +1,13 @@
 package stock.stock_service;
 
-import java.io.InputStream;
 import java.util.List;
-import java.util.Map;
-
-import javax.ws.rs.PathParam;
-import javax.ws.rs.core.Response;
 
 import dto.Company;
 import dto.Stock;
 import dto.Store;
 import dto.StoreStock;
-import dto.StoreStockMovement;
-import dto.StoreStockMovementDetail;
 import dto.Supplier;
-import dto.Transfer;
+
 
 import service.StockRest;
 import service.StockService;
