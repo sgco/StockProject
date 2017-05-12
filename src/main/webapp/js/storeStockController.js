@@ -4,11 +4,5 @@ angular.module('Stock')
 	
 	
 	
-		$scope.People={
-			id : $scope.id,
-			name:$scope.name,
-			surname : $scope.surname,
-			age :$scope.age
-				};
 		
 	})
