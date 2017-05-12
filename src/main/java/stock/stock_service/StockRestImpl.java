@@ -41,7 +41,7 @@ public class StockRestImpl implements StockRest{
     
     
     
-   // ********
+   
     
     
     
@@ -70,7 +70,7 @@ public class StockRestImpl implements StockRest{
     
     
     
-    //**
+  
     public Store addStore(Store store){
     	return stockService.createStore(store);
     }
@@ -145,123 +145,4 @@ public class StockRestImpl implements StockRest{
    
     
     
-    /*
-    public Response checkinStoreStock(Long companyId,Long storeId) ;
-       
-
-    
-    public Response adjustStoreStock(Long companyId,Long storeId) ;
-    
-   
-    public Response getRootStockList();
-
-    
-    public Response getStockHierarchy();
-
-    
-    public Response getStockList(String description);
-
-    
-    public Response getStockSubList(final Long parentStockId);
-
-    public Response addSubStock(Stock stock,final Long parentStockId);
-
-    public Response getBankConfirmation(final Long supplierId) ;
-        
-    public Response getBBBEECertificate(final Long supplierId);
-        
-    public Response getStockPicture(final Long stockid) ;
-       
-    public Response getCompanyStoreList(Long companyId);
-        
-    public Response getStockMovement(Long companyId,Long storeId,  Long stockid);
-       
-    
-    public Response addStockMovement(Long companyId,Long storeId);
-        
-    
-    public Response getTransfers(Long companyId,Long storeId);
-        
-
-    
-    public Response getTransferDetails(Long companyId,Long storeId,Long transferId) ;
-       
-    
-    public Response updateTransferDetails(Long companyId,Long storeId,Long transferId) ;
-       
-
-   
-    public Response transferStoreStock(Long companyId,Long storeId) ;
-       
-    public Response getStoreStockList(Long companyId,Long storeId);
-       
-
-    
-    public Response addStoreStockitem(Long companyId, Long storeId, StoreStock storeStock) ;
-      
-
-    private dto.StoreStock getOrCreateStoreStock(Long storeId, Long stockId) ;
-       
-    private dto.Transfer createTransfer(StoreStockTransferList sstl) ;
-       
-
-    private dto.StoreStockMovement getStoreStockMovement(Long transferId, Long stockId) ;
-       
-    private StoreStockMovementDetail getStoreStockMovementDetail(Long transferId, String serialNo, Long stockId) ;
-
-
-	public StoreStock getOrCreateStoreStock(Long storeId, Long stockId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	public Transfer createTransfer(StoreStockTransferList sstl) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	public StoreStockMovement getStoreStockMovement(Long transferId, Long stockId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	public StoreStockMovementDetail getStoreStockMovementDetail(Long transferId, String serialNo, Long stockId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-       
-  
-
-}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	*/
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
