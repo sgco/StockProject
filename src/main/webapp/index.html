@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="Stock">
+<head>
+<title>arrays</title>
+<script src="libraries/angular.js"></script>
+<script src="libraries/angular-route.js"></script>
+<script src="js/routing.js"></script>
+<script src="js/companyController.js"></script>
+<script src="js/company.js"></script>
+<script src="js/stockController.js"></script>
+<script src="js/stock.js"></script>
+<script src="js/storeController.js"></script>
+<script src="js/store.js"></script>
+<script src="js/storeStockController.js"></script>
+<script src="js/supplier.js"></script>
+<script src="js/supplierController.js"></script>
+<script src="libraries/jquery-3.2.0.js"></script> 
+<script src="libraries/bootstrap.min.js"></script> 
+<link rel="stylesheet" href="css/own.css"/>
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+
+<body>
+<div id ="navigation">
+<ul class="nav nav-tabs">
+<li class="nav-item"><a href="#/"><span class="glyphicon glyphicon-home"></a></li>
+<li class="nav-item"><a href="#/company">Company</a></li>
+<li class="nav-item"><a href="#/store">Store</a></li>
+<li class="nav-item"><a href="#/supplier">Supplier</a></li>
+<li class="nav-item"><a href="#/stock">Stock</a></li>
+<li class="nav-item"><a href="#/storeStock">Store Stock</a></li>
+</ul>
+</div>
+
+<div ng-view>
+<div>
+
+<h1>dashboard</h1>
+</div>
+</div>
+
+</body>
+
+</html>

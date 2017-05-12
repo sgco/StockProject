@@ -1,0 +1,45 @@
+<div>
+
+Id : <input type="text" ng-model="id"/><br/>
+Name : <input type="text" ng-model="name"/><br/>
+Surname : <input type="text" ng-model="surname"/><br/>
+Age : <input type="text" ng-model="age"/><br/>
+
+<table class="table">
+
+<tr>
+<td>Id</td>
+<td>Name</td>
+<td>Surname</td>
+<td>Age</td>
+</tr>
+<tr ng-repeat="person in People">
+<td>{{person.id}}</td>
+<td>{{person.name}}</td>
+<td>{{person.surname}}</td>
+<td>{{person.age}}</td>
+</tr>
+</table>
+
+<input class="btn-warning" type="submit" value="View" ng-click="ViewPeople()"/><br/>
+<input type="submit" value="Add" ng-click="addPerson()"/><br/>
+<input type="submit" value="Delete" ng-click="DeletePerson()"/>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

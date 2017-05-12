@@ -1,0 +1,62 @@
+<div class="container">
+<h1>Supplier</h1>
+<div class="alert alert-success" ng-show="show">
+	{{message}}
+	</div>
+
+
+<div class="col-xs-3">
+<input type="text" placeholder="Search" class="form-control" id="search" ng-model="search"/>
+</div>
+<a href="#/AddSupplier" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
+
+<table class="table">
+<tr>
+<td>Id</td>
+<td>Description</td>
+<td>Contact Number</td>
+<td>Contact Person</td>
+<td>Address</td>
+<td>Email</td>
+<td>Reference</td>
+<td>Bank Id</td>
+<td>Branch Code</td>
+<td>Account Number</td>
+<td>Action</td>
+<td>Action</td>
+</tr>
+<tr ng-repeat="supplier in Suppliers | filter:search">
+<td>{{supplier.id}}</td>
+<td>{{supplier.description}}</td>
+<td>{{supplier.contactNumber}}</td>
+<td>{{supplier.contactPerson}}</td>
+<td>{{supplier.address}}</td>
+<td>{{supplier.email}}</td>
+<td>{{supplier.reference}}</td>
+<td>{{supplier.branchCode}}</td>
+<td>{{supplier.accountNumber}}</td>
+<td>{{supplier.vatNumber}}</td>
+
+
+<td><a href="#/UpSupplier/{{supplier.id}}" class="btn btn-info btn-lg" ng-click="getSupplier(supplier.id)"><span class="glyphicon glyphicon-edit"></span></a></td>
+ <td><a class="btn btn-info btn-lg" ng-click="deleteSupplier(supplier.id)"><span class="glyphicon glyphicon-trash"></span></a></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

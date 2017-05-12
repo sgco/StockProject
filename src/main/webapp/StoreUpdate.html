@@ -1,0 +1,43 @@
+<div>
+
+<h1>Update Store</h1>
+
+<div class="alert alert-success" ng-show="show">
+	{{message}}
+	</div>
+<form role="form">
+<div class="col-xs-3">
+<label>Id :</label> <input type="text" id="id" class="form-control" ng-model="id" disabled/>
+<label>Address :</label> <input type="text" id="address" class="form-control" ng-model="address" required/>
+<label>Contact Number :</label> <input type="text" class="form-control" ng-model="contactNumber" required/>
+<label>Contact Person:</label> <input type="text" class="form-control" ng-model="contactPerson" required/>
+<label>Company Id :</label> <input type="text" class="form-control" ng-model="companyId" required/>
+
+<input type="submit"  class="btn btn-primary" value="Update" ng-click="updateStore()"/>
+<input class="btn btn-primary" type="submit" value="Cancel" ng-click="Cancel()"/>
+
+</div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

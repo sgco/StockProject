@@ -1,0 +1,22 @@
+<div>
+<h1>Add Company</h1>
+	<div class="alert alert-success" ng-show="show">
+	{{message}}
+	</div>
+	
+	<form role="form">
+		<div class="col-xs-3">
+			<label>Company ID :</label> <input type="text" class="form-control"
+				ng-model="companyID" data-toggle="validator/> <label>Description :</label> <input
+				type="text" class="form-control" ng-model="description" />
+			<label>Number of stores :</label><input type="text"
+				class="form-control" ng-model="stores" data-toggle="validator" />
+				<input class="btn btn-primary" type="submit" value="Add"
+		ng-click="addCompany()" /> 
+	<button class="btn btn-primary" type="submit" ng-click="Cancel()">Cancel</button>
+				
+		</div>
+	</form>
+
+	
+</div>

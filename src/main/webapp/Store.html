@@ -1,0 +1,50 @@
+<div class="container">
+<h1>Store</h1>
+
+
+ <div class="alert alert-success" ng-show="show">
+	{{message}}
+	</div>
+
+
+
+<div class="col-xs-3">
+<input type="text" placeholder="Search" class="form-control" id="search" ng-model="search"/>
+</div>
+<a href="#/AddStore" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
+
+
+<table class="table" >
+
+<tr>
+<td>Id</td>
+<td>Address</td>
+<td>Contact Number</td>
+<td>Contact Person</td>
+<td>Company Id</td>
+<td>Action</td>
+<td>Action</td>
+</tr>
+<tr ng-repeat="store in Stores | filter:search">
+<td>{{store.id}}</td>
+<td>{{store.address}}</td>
+<td>{{store.contactNumber}}</td>
+<td>{{store.contactPerson}}</td>
+<td>{{store.companyId}}</td>
+<td><a href="#/UpStore/{{store.id}}" class="btn btn-info btn-lg"/><span class="glyphicon glyphicon-edit"></a></td>
+<td><a class="btn btn-info btn-lg" ng-click="deleteStore(store.id)"><span class="glyphicon glyphicon-trash"></span></a></td>
+
+
+
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+</div>

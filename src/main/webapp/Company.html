@@ -1,0 +1,43 @@
+<div class="container">
+
+<h1>Company</h1>
+
+<div class="alert alert-success" ng-show="show">
+	{{message}}
+	</div>
+
+  
+
+<div class="col-xs-3">
+<input type="text" placeholder="Search" class="form-control" id="search" ng-model="search"/>
+</div>
+
+<a href="#/CompanyAdd" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
+
+<table class="table table-stripped">
+
+<tr>
+<td>Company ID</td>
+<td>Description</td>
+<td>Number of stores</td>
+<td>Update</td>
+<td>Delete</td>
+</tr>
+
+<tr ng-repeat="company in Companies | filter:search">
+<td>{{company.companyID}}</td>
+<td>{{company.description}}</td>
+<td>{{company.stores}}</td>
+
+<td><a href="#/AddCompany/{{company.companyID}}" class="btn btn-info btn-lg" ng-click="getCompany(company.companyID)"><span class="glyphicon glyphicon-edit"></span></a></td>
+ <td><a class="btn btn-info btn-lg" ng-click="deleteCompany(company.companyID)"><span class="glyphicon glyphicon-trash"></span></a></td>
+
+</tr>
+
+</table>
+
+
+
+
+
+</div>

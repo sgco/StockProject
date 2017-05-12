@@ -1,0 +1,43 @@
+<div>
+
+<h1>Update Supplier</h1>
+
+<div class="alert alert-success" ng-show="show">
+	{{message}}
+	</div>
+	
+<form role="form">
+<div class="col-xs-3">
+<label>Id :</label><input type="text"  class="form-control" ng-model="id" disabled/>
+<label>Description :</label> <input type="text"  class="form-control" ng-model="description" required/>
+<label>Contact Number :</label> <input type="text"  class="form-control"  ng-model="contactNumber" required/>
+<label>Contact Person :</label> <input type="text"  class="form-control"  ng-model="contactPerson" required/>
+<label>Address :</label> <input type="text"  class="form-control"  ng-model="address" required/>
+<label>Email : </label><input type="text"  class="form-control"  ng-model="email" required/>
+<label>Reference : </label><input type="text"  class="form-control"   ng-model="reference" required/>
+<label>Branch Code : </label><input type="text"  class="form-control"  ng-model="branchCode" required/>
+<label>Account Number : </label><input type="text"   class="form-control" ng-model="accountNumber" required/>
+<label>Vat Number : </label><input type="text"  class="form-control" ng-model="vatNumber" required/>
+<input class="btn btn-primary" type="submit" value="Update" ng-click="updateSupplier()" required/>
+<input class="btn btn-primary" type="submit" value="Cancel" ng-click="Cancel()" required/>
+
+</div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

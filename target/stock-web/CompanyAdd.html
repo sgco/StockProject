@@ -1,0 +1,25 @@
+<div>
+
+	<h1>Update Company</h1>
+	
+	<div class="alert alert-success" ng-show="show">
+	{{message}}
+	</div>
+	
+	<form role="form">
+		<div class="col-xs-3">
+			<label>Company ID :</label> <input type="text" class="form-control"
+				ng-model="companyID" disabled />
+				 <label>Description :</label> <input type="text" class="form-control" ng-model="description" required />
+			<label>Number of stores :</label><input type="text"
+				class="form-control" ng-model="stores"  required/>
+				<input class="btn btn-primary"
+		type="submit" value="Update" ng-click="updateCompany()"  required/>
+
+	<button class="btn btn-primary" type="submit" ng-click="Cancel()">Cancel</button>
+				
+		</div>
+	</form>
+
+	 
+</div>

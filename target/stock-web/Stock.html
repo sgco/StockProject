@@ -1,0 +1,41 @@
+<div class="container">
+<h1>Stock</h1>
+
+<div class="alert alert-success" ng-show="show">
+	{{message}}
+	</div>
+
+
+
+<div class="col-xs-3">
+<input type="text" placeholder="Search" class="form-control" id="search" ng-model="search"/>
+</div>
+<a href="#/AddStock" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
+
+<table class="table">
+<tr>
+<td>Id</td>
+<td>Code</td>
+<td>Description</td>
+<td>Require Serial No</td>
+<td>Measurement Id</td>
+<td>Child Count</td>
+<td>Action</td>
+</tr>
+<tr ng-repeat="stock in Stocks | filter:search">
+<td>{{stock.id}}</td>
+<td>{{stock.code}}</td>
+<td>{{stock.description}}</td>
+<td>{{stock.requireSerialNo}}</td>
+<td>{{stock.measurementId}}</td>
+<td>{{stock.childCount}}</td>
+
+<td><a href="#/UpStock/{{stock.id}}" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-edit"></span></a></td>
+ <td><a class="btn btn-info btn-lg" ng-click="deleteStock(stock.id)"><span class="glyphicon glyphicon-trash"></span></a></td>
+
+
+</tr>
+</table>
+
+
+</div>

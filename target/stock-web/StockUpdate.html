@@ -1,0 +1,21 @@
+<div>
+<h1>Update Stock</h1>
+<div class="alert alert-success" ng-show="show">
+	{{message}}
+	</div>
+<form role="form">
+<div class="col-xs-3">
+<label>Id :</label> <input type="text" class="form-control" ng-model="id" disabled/>
+<label>Code : </label><input type="text" class="form-control" ng-model="code" required/>
+<label>Description :</label> <input type="text" class="form-control"  ng-model="description" required/>
+<label>Require Serial No :</label> <input type="text"  class="form-control" ng-model="requireSerialNo" required/>
+<label>Measurement Id : </label><input type="text" class="form-control" ng-model="measurementId" required/>
+<label>Child Count : </label><input type="text" class="form-control" ng-model="childCount" required/>
+	<input class="btn btn-primary"
+		type="submit" value="Update" ng-click="updateStock()" />
+
+	<button class="btn btn-primary" type="submit" ng-click="Cancel()">Cancel</button>
+</div>
+</form>
+
+</div>
