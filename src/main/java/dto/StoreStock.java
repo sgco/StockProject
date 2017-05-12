@@ -13,8 +13,8 @@ public class StoreStock implements Serializable {
    
     private static final long serialVersionUID = 1L;
     
-    private List<CurrentStoreStock> currentStoreStocks;
-    private List<StoreStockMovement> storeStockMovements;
+    
+    
     
     private Integer id;
     
@@ -44,10 +44,7 @@ public class StoreStock implements Serializable {
         return true;
     }
 
-    public List<CurrentStoreStock> getCurrentStoreStock()
-    {
-        return this.currentStoreStocks;
-    }
+   
 
     public Integer getId() {
         return id;
@@ -78,10 +75,7 @@ public class StoreStock implements Serializable {
         return store;
     }
 
-    public List<StoreStockMovement> getStoreStockMovement()
-    {
-        return this.storeStockMovements;
-    }
+  
 
     @Override
     public int hashCode() {
@@ -90,11 +84,7 @@ public class StoreStock implements Serializable {
         return hash;
     }
 
-    public void setCurrentStoreStock(List<CurrentStoreStock> currentstoreStock)
-    {
-        this.currentStoreStocks = currentstoreStock;
-    }
-
+   
     
     public void setId(int id) {
         this.id = id;
@@ -127,11 +117,7 @@ public class StoreStock implements Serializable {
         this.store = store;
     }
 
-    public void setStoreStockMovement(List<StoreStockMovement> storeStockMovements)
-    {
-        this.storeStockMovements = storeStockMovements;
-    }
-
+  
     @Override
     public String toString() {
         return "com.model.StoreStock[ id=" + id + " ]";
