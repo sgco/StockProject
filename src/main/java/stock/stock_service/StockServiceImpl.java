@@ -263,18 +263,7 @@ public class StockServiceImpl implements StockService {
 
 	}
 	
-	/*
-	    private Long id;
-	    
-	    
-	    private Long quantity;
-	    
-	    private Long minQuantity;
-
-	    private Long pendingQuantity;
-
-	    private Long missingQuantity;
-	*/
+	
 	
 	
 

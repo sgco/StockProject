@@ -10,15 +10,5 @@ import dto.Company;
  *
  */
 public class App {
-    public static void main( String[] args ){
-    	
-    	
-    	 StockServiceImpl impl = new  StockServiceImpl();
-    	System.out.println("gco");
-    	 List<Company> companies = new ArrayList<Company>();
-    	for( Company c :companies ){
-    	
-    	System.out.println(c.getDescription());
-    	}
-    }
+    
 }
